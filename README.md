@@ -1,13 +1,17 @@
 # solid-examples
 Examples includes explaintation for each principle
 # Single Responsibility Principle
+SRP states: <b>"THERE SHOULD NEVER BE MORE THAN ONE REASON FOR A CLASS TO CHANGE"</b><br>
 Given that we have an class called Employee with two methods CalculateSalary and Output. What if we use this class for other application which just needs the CalculateSalary method? Yes, the Output method might not used. This design violates Single Responsibility Principle. Because the Employee class has two responsibilities. This would lead to some trouble for the application above. If the Output use some GUI library, it will take much time to compile, link to device ...
 For better design, we should create a new separated class named EmployeeForCalculator. So that, if there is any change in the way we calculate, we do not need to change the original Employee class. Do the same with Output method.
 # Open - closed Principle
+OP states: <b>"SOFTWARE ENTITIES (CLASSES, MODULES, FUNCTIONS, ETC.) SHOULD BE OPEN FOR EXTENSION, BUT CLOSED FOR MODIFICATION"</b><br>
 Given that at the first time, our company just has two type of employee is Manager and Director, we need a method CalculateAllSalaries. Each position has different way to calculate the salary. So for each position, we create a method CalculateSalary. What if when the company expands, more position with different salary and the number of employee is bigger? Yes, we have to add more if/else/switch-case block in CalculateAllSalaries method and new calculate method whenever we have additional postions like Designer or Developer. This violates Open-closed Principle.
 In order to fix this, we can add more class for each new position, inherit the Employee class. Then we can override CalculateSalary method for each class separately. If we need to add more type, just add a new job title then do the same as above.
 # Liskov Subsitution Principle
+LSP states: <b>"FUNCTIONS THAT USE POINTERS OR REFERENCES TO BASE CLASSES MUST BE ABLE TO USE OBJECTS OF DERIVED CLASSES WITHOUT KNOWING IT".</b><br>
+Given that we have a Rectangle class. For the first time when we learn OOP concept, we misunderstand that when we add a Square, then Square should inherits Rectangle. Follow IS-A relation, this type of inheritants is quite good. However, this is wrong. Let's make it clear. Rectangle has Width and Height properties, follow them are SetHeight(), GetHeight(), SetWidth(), GetWidth(). Does a Square class need the Height property and the Get/Set for it? What if we create 1.000.000 objects in Square type? Wastful!. Ignore the memory, for Get/Set of Width and Height, in each method, we can assign Width = Height and reverse this assignment.
 
 # Interface Segration Principle
-
+ISP states: <b></b>
 # Dependency Inversion Principle
