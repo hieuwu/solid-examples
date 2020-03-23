@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SolidExamples
 {
-    class EmployeeForCalculator: Employee
+    class Manager:Employee
     {
-        public
-          override void CalculateSalary()
+        public override void CalculateSalary()
         {
-            Console.WriteLine("Calculator is processing...");
+            Console.WriteLine("Manager salary");
         }
     }
 }
