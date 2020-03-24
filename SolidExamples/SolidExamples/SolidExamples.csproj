@@ -43,11 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Developer.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="DogBehavior.cs" />
+    <Compile Include="DogInCircus.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeForCalculator.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

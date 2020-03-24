@@ -10,7 +10,6 @@ namespace SolidExamples
     {
         static void Main(string[] args)
         {
-
             List<Employee> allEmployees = new List<Employee>();
             allEmployees.Add(new Manager());
             allEmployees.Add(new Developer());
