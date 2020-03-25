@@ -16,3 +16,7 @@ Given that we have a Rectangle class. For the first time when we learn OOP conce
 ISP states: <b>A CLIENT SHOULD NEVER BE FORCED TO IMPLEMENT AN INTERFACE THAT IT DOESN'T USE OR CLIENTS SHOULDN'T BE FORCED TO DEPEND ON METHODS THEY DO NOT USE</b> <br>
 Given that we have a Dog class. And a interface DogBehavior includes all of the action of a dog like Bark(), Eat(), Sleep(), Play(), Sing(). In a case that the dog in the Circus, it just needs the Sing() method. Does we have to implement the whole DogBehavior interface? No, we should divide the big interface into smaller one for each role of a object. For example, in the circus, Dog just need to implement a interface named DogInCircus to perform some certain actions.
 # Dependency Inversion Principle
+DIP states: <b>"A. HIGH LEVEL MODULES SHOULD NOT DEPEND UPON LOW
+LEVEL MODULES. BOTH SHOULD DEPEND UPON ABSTRACTIONS. <br>
+B. ABSTRACTIONS SHOULD NOT DEPEND UPON DETAILS. DETAILS
+SHOULD DEPEND UPON ABSTRACTIONS"</b>
