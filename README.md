@@ -20,4 +20,4 @@ DIP states: <b>"A. HIGH LEVEL MODULES SHOULD NOT DEPEND UPON LOW
 LEVEL MODULES. BOTH SHOULD DEPEND UPON ABSTRACTIONS. <br>
 B. ABSTRACTIONS SHOULD NOT DEPEND UPON DETAILS. DETAILS
 SHOULD DEPEND UPON ABSTRACTIONS"</b><br>
-Given that we have scenario on motobike that when we use the HandBrake, the BackLight is turned on. Then we have a relationship between HandBrake and BackLight class. The HandBrake sends TurnOn() message to BackLight so HandBrake holds an instance of BackLight class. This depency implies that the HandBrake must be changed whenever the BackLight class changes. 
+Given that we have scenario on motobike that when we use the HandBrake, the BackLight is turned on. Then we have a relationship between HandBrake and BackLight class. The HandBrake sends TurnOn() message to BackLight so HandBrake holds an instance of BackLight class. This depency implies that the HandBrake must be changed whenever the BackLight class changes. This design violates DIP because a high level module depends on a low level one. 
